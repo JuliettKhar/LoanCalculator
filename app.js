@@ -14,12 +14,9 @@ function findElements() {
 	monthlyPayment = document.querySelector('#monthly-payment');
 	totalPayment = document.querySelector('#total-payment');
 	totalInterest = document.querySelector('#total-interest');
-	console.log(loanForm, amount, interest, years, monthlyPayment, totalPayment, totalInterest);
 }
 
 function calculateResult(event) {
-	console.log('Calculating...')
-
 	const principal = parseFloat(amount.value);
 	const calculateInterest = parseFloat(interest.value) / 100 /12;
 	const calculatedPayments = parseFloat(years.value) * 12;
